@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-data-usdot",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "US DOT Open Data (datahub.transportation.gov) Socrata MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-0647ad84fb37bffba142988ff839054ac91158999bd513a496e4b43168ec4846",
-    "sourceCommit": "56d3c46c09bb3078ffdbdbca992a93f406bcd382"
+    "sourceHash": "v1-b006bd787f21daae1ae7c8eee2f612e251e9db50293e43ddf7533fb1d26382ae",
+    "sourceCommit": "8355bf3d1eece256a62a89dba2278e7a77bebe07"
   }
 }
