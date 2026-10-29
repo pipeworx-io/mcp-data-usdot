@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-data-usdot",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "US DOT Open Data (datahub.transportation.gov) Socrata MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-data-usdot": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "data-usdot"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-data-usdot.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/data-usdot",
   "pipeworx": {
-    "sourceHash": "v1-1091e582c894f9190da57528455f2ea14238f6c45e009de44addc0c84236d80a",
-    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
+    "mode": "gateway",
+    "slug": "data-usdot",
+    "gatewaySlug": "data-usdot",
+    "sourceHash": "v1-e2ff2fd6a9d1920b492c26d49ed8a75750a52095986b5ad1d3c11e79ee48db93",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
